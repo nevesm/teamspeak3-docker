@@ -21,7 +21,7 @@ RUN apt-get update \
 COPY docker-ts3.sh /opt/docker-ts3.sh
 
 # Inject a Volume for any TS3-Data that needs to be persisted or to be accessible from the host. (e.g. for Backups)
-VOLUME ["/teamspeak3"]
+VOLUME ["/ts01"]
 
 CMD ["/opt/docker-ts3.sh"]
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-VOLUME=/teamspeak3
+VOLUME=/ts01
 
 if [ -e "${VOLUME}/.ts3server_license_accepted" ]; then
 	echo "- Accepting license as you requested"
