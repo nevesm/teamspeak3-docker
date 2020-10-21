@@ -19,7 +19,7 @@ RUN apt-get update \
  && rm -rf /var/lib/apt/lists/*
 
 COPY docker-ts3.sh /opt/docker-ts3.sh
-RUN chmod a+x docker-ts3.sh
+RUN ["chmod", "+x", "/opt/docker-ts3.sh"]
 
 # Inject a Volume for any TS3-Data that needs to be persisted or to be accessible from the host. (e.g. for Backups)
 VOLUME ["/ts01"]
