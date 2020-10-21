@@ -2,7 +2,7 @@ default: test
 
 build:
 	# Build image
-	docker build -t "luzifer/teamspeak3:latest" .
+	docker build -t "msmneves/teamspeak3:latest" .
 
 hadolint:
 	# Execute hadolint on Dockerfile
@@ -15,7 +15,7 @@ hadolint:
 official-tests: build
 	# Execute official docker-image tests
 	git clone https://github.com/docker-library/official-images.git /tmp/official-images
-	/tmp/official-images/test/run.sh "luzifer/teamspeak3:latest"
+	/tmp/official-images/test/run.sh "msmneves/teamspeak3:latest"
 	rm -rf /tmp/official-images
 
 test: hadolint official-tests
