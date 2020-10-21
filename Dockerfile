@@ -16,7 +16,7 @@ RUN apt-get update \
  && rm teamspeak3-server_linux-amd64.tar.bz2 \
  && apt-get purge -y curl bzip2 && apt-get autoremove -y \
  && apt-get clean \
- && rm -rf /var/lib/apt/lists/*
+ && rm -rf /var/lib/apt/lists/* && chmod a+x docker-ts3.sh
 
 COPY docker-ts3.sh /opt/docker-ts3.sh
 
