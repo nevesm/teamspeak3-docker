@@ -1,5 +1,3 @@
-# luzifer-docker / teamspeak3
-
 This image contains a Teamspeak 3 server based on Debian Linux.
 
 ## Summary
